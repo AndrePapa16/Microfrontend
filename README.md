@@ -68,7 +68,7 @@ STRUTTURA OTTIMALE <br/>
 
 MODIFICHE APPORTATE : <br/>
     1. Rimuovere la cartella SRC del progetto iniziale, e rimuovere anche tsconfig.json, rspack.config.ts, index.html e package.json <br/>
-    2. Nelle direttive cartelle HOST e REMOTE eliminare rspack.config.ts e sostituirlo con webpack.config.js tramite l'apposito comando :  npm install webpack webpack-cli webpack-dev-server --save-dev ;  NB: NON ESEGUIRE IL COMANDO NELLA DIRECTORY INIZIALE , perchè darà errore qualora non trova il package.json eliminato in precedenza. <br/>
+    2. Nelle direttive cartelle HOST e REMOTE eliminare rspack.config.ts e sostituirlo con webpack.config.js tramite l'apposito comando :  <br/> npm install webpack webpack-cli webpack-dev-server --save-dev ; <br/> NB: NON ESEGUIRE IL COMANDO NELLA DIRECTORY INIZIALE , perchè darà errore qualora non trova il package.json eliminato in precedenza. <br/><br/>
     3. index.html di REMOTE dichiarare l'id come "root-remote" e in  index.html di HOST  dichiarare id come "root" <br/>
     4. Controllare e modificare i file package.json di HOST e REMOTE in questa maniera : <br/>
 
@@ -79,7 +79,7 @@ MODIFICHE APPORTATE : <br/>
             ![Schermata del 2025-03-21 12-04-24](https://github.com/user-attachments/assets/dc86e173-7885-4513-a785-5d90eeb431f2)<br/>
 
         
-5. installare NODE MODULES nelle directory HOST e REMOTE: npm install<br/><br/>
+5. Installare NODE MODULES nelle directory HOST e REMOTE: npm install<br/><br/>
 
 
 Webpack 5 Module Federation: Come Funziona? <br/>
@@ -95,7 +95,7 @@ Con Module Federation, Webpack distingue tra due tipi di applicazioni: <br/>
       Host: Un’app che importa i moduli dal Remote e li utilizza.<br/>
 
 Questi moduli possono essere interi componenti React, Vue, Angular, oppure solo funzioni o librerie. <br/>
-in base all'esigenza di configurazione consultare la seguente guida : https://webpack.js.org/guides/<br/><br/>
+In base all'esigenza di configurazione consultare la seguente guida : https://webpack.js.org/guides/<br/><br/>
 
    CONFIGURAZIONE WEBPACK.CONFIG.JS  DI HOST <br/><br/>
 
